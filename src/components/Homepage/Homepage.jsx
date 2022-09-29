@@ -18,12 +18,15 @@ const Homepage = () => {
           Autem necessitatibus hic eveniet dolorem itaque corporis.
         </p>
         <div className="home-actions">
-          <button className="group action-buttons ">
-            Resume
+          {/* <button className="group action-buttons ">
+            <a href="/Arunkumar-B-resume.pdf" className="href" download={true}>
+              {" "}
+              Resume
+            </a>
             <span className="group-hover:rotate-90 duration-300 ">
               <ImArrowRight2 className="arrow-icon" size={20} />
             </span>
-          </button>
+          </button> */}
           <button className="group action-buttons ">
             Portfolio
             <span className="group-hover:rotate-90 duration-300">

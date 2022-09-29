@@ -3,6 +3,8 @@ import "./SocialLinks.scss";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 
 export const SocialLinks = () => {
   const links = [
@@ -44,23 +46,32 @@ export const SocialLinks = () => {
           <BsFillPersonLinesFill size={30} />
         </>
       ),
-      name: "Resume",
+      name: "Download Resume",
+      href: "/Arunkumar-B-resume.pdf",
       style: "rounded-br-md",
       download: true,
     },
   ];
   return (
-    <div className="social-links-container">
-      <ul>
-        {links.map(({ id, child, href, download }) => (
-          <li key={id} className="social-links   ">
-            <a href={href} className="" download={download} target="_blank">
-              {child}
-            </a>
-          </li>
+    <div className="social-links-container  ">
+      <ul clasName="social-list">
+        {links.map(({ id, name, child, href, download }) => (
+          <Tooltip title={name} arrow placement="right">
+            <li key={id} className="social-links   ">
+              <a
+                href={href}
+                className=""
+                download={download}
+                target="_blank"
+                rel="nonreferer"
+              >
+                {child}
+              </a>
+            </li>
+          </Tooltip>
         ))}
       </ul>
-      <div className="  hidden lg:flex flex-col top-[35%] left-0 fixed "></div>
+      <div className="hidden lg:flex flex-col top-[35%] left-0 fixed"></div>
     </div>
   );
 };

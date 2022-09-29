@@ -1,0 +1,90 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  padding: 1rem 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 65px;
+    flex-direction: column;
+  }
+}
+.role {
+  color: white;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  @media screen and (min-width: 640px) {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
+.home-brief {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  padding-right: 20px;
+
+  width: auto;
+}
+.home-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.action-buttons {
+  color: white;
+  width: fit-content;
+  background-image: linear-gradient(
+    to right,
+    #04a9cb,
+    #009fd9,
+    #0093e5,
+    #0083ed,
+    #2470ec
+  );
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+}
+.arrow-icon {
+  margin-left: 0.25rem;
+}
+.home-container.home-image-section {
+  margin: 0 1% 0 1%;
+  align-self: center;
+}
+.my-profile {
+  width: 50%;
+  height: 50%;
+}
+.home-brief-text {
+  color: rgba(255, 255, 255, 0.557);
+  padding-top: 20px;
+  text-align: justify;
+}
+.home-image-section {
+  padding-left: 20px;
+}
+.home-image-section > img {
+  border-radius: 1rem;
+  width: 66.666667%;
+  height: auto;
+  object-fit: contain;
+
+  @media screen and (max-width: 768px) {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: contain;
+  }
+}

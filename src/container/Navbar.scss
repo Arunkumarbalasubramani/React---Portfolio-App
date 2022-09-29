@@ -1,0 +1,25 @@
+.href {
+  text-decoration: none;
+  color: rgba(171, 178, 190, 0.985);
+  //   pointer-events: painted;
+}
+.href:hover {
+  color: whitesmoke;
+}
+
+.mobile-nav {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: rgb(195, 201, 212);
+  background-color: black;
+  font-weight: 500;
+}
+
+.mobile-nav :hover {
+  color: whitesmoke;
+}
+
+.mobile-nav li {
+  margin-bottom: 10px;
+}

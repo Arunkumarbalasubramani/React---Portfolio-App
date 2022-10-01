@@ -4,11 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2%;
-  padding: 1rem 1rem;
 
+  padding: 1rem 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #120d10,
+    #1b161d,
+    #1f1f2a,
+    #1f2937
+  );
   @media screen and (max-width: 768px) {
-    padding: 65px;
     flex-direction: column;
   }
 }
@@ -25,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 5%;
+  margin-left: 10%;
   padding-right: 20px;
 
   width: auto;

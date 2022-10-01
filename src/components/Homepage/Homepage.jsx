@@ -2,7 +2,6 @@ import React from "react";
 import "./Homepage.scss";
 import ProfilePic from "../../assets/Arunkumarpic.JPG";
 import { ImArrowRight2 } from "react-icons/im";
-import { SocialLinks } from "../SocialLinks/SocialLinks";
 
 const Homepage = () => {
   return (

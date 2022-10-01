@@ -1,0 +1,35 @@
+.about-container {
+  background-image: linear-gradient(
+    to bottom,
+    #1f2937,
+    #1f1f2a,
+    #1b161d,
+    #120d10,
+    #000000
+  );
+  color: white;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  padding-left: 10%;
+}
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.heading {
+  padding-bottom: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  border-bottom-width: 4px;
+  border-color: grey;
+}
+.about-para {
+  text-align: justify;
+  font-size: larger;
+  margin-top: 5rem;
+}

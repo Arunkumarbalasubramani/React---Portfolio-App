@@ -1,4 +1,10 @@
-import { Homepage, About, Footer, Skills, Work } from "./components/export";
+import {
+  Homepage,
+  About,
+  Footer,
+  Skills,
+  Portfolio,
+} from "./components/export";
 import { Navbar } from "./container/Navbar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,8 +16,9 @@ function App() {
       <Homepage />
 
       <About />
+      <Portfolio />
       <Skills />
-      <Work />
+
       <Footer />
       <SocialLinks />
     </div>

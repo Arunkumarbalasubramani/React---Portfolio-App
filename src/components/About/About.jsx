@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-heading">
         <h3 className="heading">About</h3>
 
-        <p className="about-para">
+        <p className="about-para ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
           ipsa quaerat perspiciatis distinctio in numquam labore praesentium.
           Officiis earum optio porro. Natus similique pariatur nemo tempore iste
@@ -28,6 +28,7 @@ const About = () => {
           eveniet hic velit rem sequi. Doloribus.
         </p>
       </div>
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"></div>
     </div>
   );
 };

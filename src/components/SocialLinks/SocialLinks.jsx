@@ -3,7 +3,7 @@ import "./SocialLinks.scss";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import IconButton from "@mui/material/IconButton";
+
 import Tooltip from "@mui/material/Tooltip";
 
 export const SocialLinks = () => {

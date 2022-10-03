@@ -47,7 +47,7 @@ const Contact = () => {
             {contactLinks.map(({ src, title, value }, index) => (
               <div className="contact-item" key={index}>
                 <div className="icon">
-                  {src} <span> {title}: </span>
+                  <span> {title}: </span>
                 </div>
                 <p>{value}</p>
               </div>

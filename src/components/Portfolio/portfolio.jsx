@@ -20,32 +20,32 @@ const Portfolio = () => {
     },
     {
       src: marvelMoviesApp,
-      name: "marvel-movie-app",
+      name: "Marvel-Movies- App",
       github: "",
       netlify: "",
     },
     {
       src: calculator,
-      name: "calculator-app",
+      name: "Calculator Using DOM",
       github: "https://github.com/Arunkumarbalasubramani/CalculatorProject-DOM",
       netlify: "https://arunkumar-b-calculator-dom.netlify.app",
     },
     {
       src: tipCalculator,
-      name: "tipCalculator-app",
+      name: "TipCalculator-app",
       github: "https://github.com/Arunkumarbalasubramani/TipCalculator-DOM",
       netlify: "https://tipcalculator-arunb.netlify.app",
     },
     {
       src: landingPage,
-      name: "staticWebsite-app",
+      name: "Bootstrap Landing Page",
       github:
         "https://github.com/Arunkumarbalasubramani/Landing_Page_using_Bootstrap",
       netlify: "https://landingpage-usingbootstrap-arunkumarbtask.netlify.app",
     },
     {
       src: staticWebsite,
-      name: "staticWebsite-app",
+      name: "A Static Website",
       github: "https://github.com/Arunkumarbalasubramani/Laud-Page-",
       netlify: "https://arunkumar-b-laudpage-task.netlify.app",
     },
@@ -68,6 +68,7 @@ const Portfolio = () => {
                 src={src}
                 alt={`${name}-portfolio`}
               />
+              <p className="portfolio-name">{name}</p>
             </div>
             <div className="portfolio-actions">
               <button className="duration-150 hover:scale-150">

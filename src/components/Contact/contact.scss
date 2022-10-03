@@ -1,0 +1,40 @@
+.contact-container {
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #120d10,
+    #1b161d,
+    #1f1f2a,
+    #1f2937
+  );
+  width: 100%;
+
+  color: white;
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  margin: auto;
+}
+
+.contact-heading {
+  padding-bottom: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  border-bottom-width: 4px;
+  border-color: rgba(128, 128, 128, 0.5);
+}
+
+.contact-helper {
+  padding: 10px 0 20px 0;
+  font-style: italic;
+  font-size: larger;
+}
+.contact-page {
+  display: flex;
+  gap: 30px;
+}

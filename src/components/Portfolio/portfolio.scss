@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10% 10% 20% 10%;
+  padding: 10%;
   margin: auto;
 }
 
@@ -52,6 +52,9 @@
 }
 .portfolio-card {
   margin-bottom: 20px;
+  @media screen and (max-width: 640px) {
+    margin-bottom: 40px;
+  }
 }
 .portfolio-thumbnail {
   width: 100%;
@@ -63,7 +66,12 @@
   justify-content: space-evenly;
   padding: 1.5rem 0 1.5rem 0;
 }
-
+.portfolio-name {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: larger;
+}
 .action-btn {
   color: rgba(255, 252, 252, 0.5);
   :hover {

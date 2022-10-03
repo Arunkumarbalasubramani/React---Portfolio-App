@@ -1,7 +1,7 @@
 import {
   Homepage,
   About,
-  Footer,
+  Contact,
   Skills,
   Portfolio,
 } from "./components/export";
@@ -14,13 +14,11 @@ function App() {
     <div>
       <Navbar />
       <Homepage />
-
       <About />
       <Portfolio />
       <Skills />
-
-      <Footer />
       <SocialLinks />
+      <Contact />
     </div>
   );
 }

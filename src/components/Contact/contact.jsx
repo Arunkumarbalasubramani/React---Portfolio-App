@@ -55,7 +55,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="right-contactpage">
-          <form action="" className="contact-form">
+          <form
+            action="https://getform.io/f/6a323b78-0f56-40a9-bdd5-b601e5b2fb80"
+            method="POST"
+            className="contact-form"
+          >
             <input
               type="text"
               placeholder="Enter Your Name"

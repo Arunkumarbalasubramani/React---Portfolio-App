@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../container/Navbar.scss";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 export const Navbar = () => {
-  const items = ["home", "about", "portfolio", "Skills", "Contact"];
+  const items = ["home", "about", "portfolio", "skills", "contact"];
   const [nav, setNav] = useState(false);
   return (
     <nav className="app__navbar">
@@ -18,9 +18,9 @@ export const Navbar = () => {
               key={index}
               className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-125 duration-150   "
             >
-              <a href={`${item}-page`} className="href">
+              <Link to={item} smooth duration={500} className="href">
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -39,9 +39,17 @@ export const Navbar = () => {
                 key={index}
                 className="nav-item-mbile px-4 hover:-translate-x-3.5 text-white duration-150   "
               >
-                <a href={`${item}-page`} className="mobile-nav">
+                <Link
+                  to={item}
+                  smooth
+                  duration={500}
+                  onClick={() => {
+                    setNav(!nav);
+                  }}
+                  className="href"
+                >
                   {item}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

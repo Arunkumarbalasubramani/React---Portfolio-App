@@ -6,7 +6,6 @@ import calculator from "../../assets/portfolio/calculator.jpeg";
 import tipCalculator from "../../assets/portfolio/tip-calc.png";
 import staticWebsite from "../../assets/portfolio/static-web.jpg";
 import landingPage from "../../assets/portfolio/Bootstrap page.png";
-import Card from "@mui/material/Card";
 
 import { SiNetlify } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -72,12 +71,22 @@ const Portfolio = () => {
             </div>
             <div className="portfolio-actions">
               <button className="duration-150 hover:scale-150">
-                <a href={github} target="_blank" className="action-btn">
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="action-btn"
+                >
                   <FaGithub size={30} />
                 </a>
               </button>
               <button className="duration-150 hover:scale-150">
-                <a href={netlify} target="_blank" className="action-btn">
+                <a
+                  href={netlify}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="action-btn"
+                >
                   <SiNetlify size={30} />
                 </a>
               </button>

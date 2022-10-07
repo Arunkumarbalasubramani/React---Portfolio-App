@@ -9,27 +9,27 @@ import { TbLanguageHiragana } from "react-icons/tb";
 const Contact = () => {
   const contactLinks = [
     {
-      src: ImLocation,
+      src: <ImLocation />,
       title: "Location",
       value: "Chennai, India",
     },
     {
-      src: MdOutlineEmail,
+      src: <MdOutlineEmail />,
       title: "Email ID",
       value: "arunkumar.vbs.b@gmail.com",
     },
     {
-      src: FaUserGraduate,
+      src: <FaUserGraduate />,
       title: "Education",
       value: "B.E., Mechanical Engineering",
     },
     {
-      src: AiOutlineMobile,
+      src: <AiOutlineMobile />,
       title: "Mobile No",
       value: "+91 96593 15121",
     },
     {
-      src: TbLanguageHiragana,
+      src: <TbLanguageHiragana />,
       title: "Languages",
       value: "Tamil, English",
     },
@@ -47,12 +47,37 @@ const Contact = () => {
             {contactLinks.map(({ src, title, value }, index) => (
               <div className="contact-item" key={index}>
                 <div className="icon">
-                  <span> {title}: </span>
+                  {src} <span> {title} : </span>
                 </div>
                 <p>{value}</p>
               </div>
             ))}
           </div>
+        </div>
+        <div className="right-contactpage">
+          <form action="" className="contact-form">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="name"
+              className="contact-input focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              className="contact-input focus:outline-none"
+              name="email"
+            />
+            <textarea
+              name="message"
+              rows="10"
+              placeholder="Enter Your Message"
+              className="contact-input focus:outline-none"
+            ></textarea>
+            <button className="contact-btn hover:scale-110 duration-300">
+              Let's Talk
+            </button>
+          </form>
         </div>
       </div>
     </div>
